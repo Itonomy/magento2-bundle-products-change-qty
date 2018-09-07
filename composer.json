@@ -1,0 +1,27 @@
+{
+  "name": "itonomy/bundleproductchangeqty",
+  "description": "Magento 2 - Let customers change the quantity for checkbox based options with bundle products.",
+  "authors": [
+    {
+      "name": "Raphaël Bronsveld",
+      "email": "raphael.bronsveld@itonomy.nl",
+      "homepage": "https://raphaelbronsveld.com/"
+    }
+  ],
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "php": "~7.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Itonomy\\BundleProductChangeQty\\": ""
+    }
+  }
+}
