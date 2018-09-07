@@ -1,5 +1,9 @@
 # Magento 2 BundleProduct Change Qty
 
+[![Latest Stable Version](https://poser.pugx.org/itonomy/bundleproductchangeqty/v/stable)](https://packagist.org/packages/itonomy/bundleproductchangeqty)
+[![Total Downloads](https://poser.pugx.org/itonomy/bundleproductchangeqty/downloads)](https://packagist.org/packages/itonomy/bundleproductchangeqty)
+[![License](https://poser.pugx.org/itonomy/bundleproductchangeqty/license)](https://packagist.org/packages/itonomy/bundleproductchangeqty)
+
 **Allow customers to change the quantity on checkbox based bundle product options.**
 
 Magento, by default, doesn't allow customers to change the quantity of checkbox options on Bundle products. This module changes that.
