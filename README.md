@@ -36,9 +36,10 @@ Checkbox template is overwritten, so with a default Magento installation it shou
 
 <img align="center" src="./docs/checkbox-bundleproducts.png" height="400">
 
-## Version
+## Changelog
 
-- Updated to version 1.0.0 to achieve a first version
+- 1.0.0 First version module
+- 1.0.1 Quantity input for bundle options with only a single product is now visible as well. This compliments the module by providing even more customizability. Issue: [#2](https://github.com/Itonomy/magento2-bundle-products-change-qty/issues/2)
 
 ## License
 
