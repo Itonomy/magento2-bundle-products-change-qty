@@ -16,11 +16,13 @@ class Type extends \Magento\Bundle\Model\Product\Type
      */
     protected function getQty($selection, $qtys, $selectionOptionId)
     {
-        if ($selection->getSelectionCanChangeQty() && isset($qtys[$selectionOptionId])) {
-            $qty = (float)$qtys[$selectionOptionId] > 0 ? $qtys[$selectionOptionId] : 1;
-        } elseif (isset($qtys[$selectionOptionId][$selection->getId()])) {
+        if (isset($qtys[$selectionOptionId][$selection->getId()])) {
             $qty = (float)$qtys[$selectionOptionId][$selection->getId()] ? $qtys[$selectionOptionId][$selection->getId()] : 1;
-        } else {
+        }
+        elseif ($selection->getSelectionCanChangeQty() && isset($qtys[$selectionOptionId])) {
+            $qty = (float)$qtys[$selectionOptionId] > 0 ? $qtys[$selectionOptionId] : 1;
+        } 
+        else {
             $qty = (float)$selection->getSelectionQty() ? $selection->getSelectionQty() : 1;
         }
         $qty = (float)$qty;
